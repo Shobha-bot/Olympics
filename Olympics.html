@@ -1,0 +1,60 @@
+<html>
+    
+<head>
+	<title>Olympics</title>
+</head>
+    
+<body class="body-background" style="background-color: azure;">
+	<P>Press any key</P>
+    
+	<canvas id="myCanvas" width="500" height="800" style="border-width: medium; border-color: dimgrey;"></canvas>
+    
+	<figure> 
+        <img id="imgExplain" src="Olympics/imgExplain.png">
+        
+		<figcaption>The Olympics logo explained</figcaption>
+	</figure>
+    
+	<br>
+    
+	<p>The Olympic Games are known as the world’s foremost athletic competition. Over 200 nations participate in this event that happens once in 4 years. And in these four years, every two years, they alternate with the Summer and Winter Olympics. There has also been the addition of the Paralympic Games, the Youth Olympic Games, the five Continental Games, Deaflympics, the Special Olympics, and the World Games. This is for the inclusion of all athletes, non-disabled, disabled, and different age groups. The World Games is for sports that are not included in the main Olympic Games. Different nations host the games every Olympic. Some cities where these Games have been held are Vancouver, London, Sochi, Rio de Janeiro, Pyeongchang, Tokyo, etc.</p>
+    
+	<p>Click <a href="https://en.wikipedia.org/wiki/Olympic_Games">here</a> to know more.</p>
+    
+</body>
+    
+<script type="text/javascript">
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+window.addEventListener("keydown", draw);
+
+function draw(e) {
+	ctx.beginPath();
+	ctx.strokeStyle = "blue";
+	ctx.lineWidth = 5;
+	ctx.arc(250, 210, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.strokeStyle = "black";
+	ctx.lineWidth = 5;
+	ctx.arc(350, 210, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.strokeStyle = "red";
+	ctx.lineWidth = 5;
+	ctx.arc(450, 210, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.strokeStyle = "yellow";
+	ctx.lineWidth = 5;
+	ctx.arc(300, 250, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.strokeStyle = "green";
+	ctx.lineWidth = 5;
+	ctx.arc(400, 250, 40, 0, 2 * Math.PI);
+	ctx.stroke();
+}
+</script>
+
+</html>
